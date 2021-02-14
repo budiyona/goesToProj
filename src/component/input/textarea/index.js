@@ -6,13 +6,15 @@ class TextArea extends Component {
         this.state = {}
     }
     render() {
-        const {onChange} = this.props
         return (
-            <textarea
-                className="text-area"
-                name="efek" 
-                onChange={onChange}
-            />);
+            <div className="mb-3">
+                <label className="form-label">{this.props.children}</label>
+                <textarea
+                    className="form-control"
+                    name="efek"
+                />
+            </div>
+        );
     }
 }
 

@@ -9,7 +9,7 @@ class Select extends Component {
     render() {
         
         return (
-            <select name="zatKimia" onChange="" >
+            <select name="zatKimia" onChange="" className="form-select">
                 <option disabled value="" selected>Pilih Zat</option>
                 <option value="Cuka">Cuka</option>
                 <option value="Garam">Garam</option>

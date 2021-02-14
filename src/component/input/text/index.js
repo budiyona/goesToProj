@@ -4,34 +4,17 @@ import { connect } from 'react-redux';
 class Text extends Component {
     constructor(props) {
         super(props);
-        this.state = { 
+        this.state = {
             namainpur: ""
-         }
+        }
     }
-    setValue = (el) =>{
-        console.log(el.target.value);
-        this.setState({
-            namainput: el.target.value
-        })
-    }
-    render() { 
-        const {onChange, value} = this.props
-        return ( 
-           <input value={value} type="text" name="nama" onChange={onChange} />
-         );
+    render() {
+        return (
+            <div className="mb-3">
+                <label className="form-label">{this.props.children}</label>
+                <input type="text" className="form-control" />
+            </div>
+        );
     }
 }
-const mapStateToProps = (state) => {
-    return {
-        nama: state.nama
-    }
-}
-const mapDispatchToProps = (dispatch) => {
-    return {
-        setNama: () => dispatch({type: "SET_NAMA_ACTION"
-        ,nama: this.state.namainput
-        }),
-        
-    }
-}
-export default connect(mapStateToProps, mapDispatchToProps)(Text);
+export default Text;

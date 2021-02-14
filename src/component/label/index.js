@@ -7,7 +7,7 @@ class Label extends Component {
     }
     render() { 
         return ( 
-            <label>{this.props.children}</label>
+            <label className="form-label">{this.props.children}</label>
          );
     }
 }

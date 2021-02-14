@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { Redirect } from 'react-router-dom';
 import { Button, Text, TextArea, Date, Select } from "../input";
 import Label from "../label";
 
@@ -10,25 +9,26 @@ class Form extends Component {
         this.state = {
         }
     }
-    
     render() {
         return (
-            
             <div className="Form">
-                <Label>Nama Formula</Label>
-                <Text  ></Text>
-                <Label>Tanggal Dibuat</Label>
-                <Date  ></Date>
-                <Label>Zat Kimia</Label>
-                <Select  />
-                <Label >List Zat Kimia</Label>
-                <div className="list-kimia">
-                    
+                <div className="card-body">
+                        <Text>Nama</Text>
+                        <Date>tanggal</Date>
+                    <div className="mb-3">
+                        <Label>Zat Kimia</Label>
+
+                        <select multiple class="form-control" id="exampleFormControlSelect2">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                    <TextArea>Hasil</TextArea>
+                    <Button>Tambah</Button>
                 </div>
-                <Label>Efek</Label>
-                <TextArea  ></TextArea>
-                <Label >Button</Label>
-                <Button ></Button>
             </div>
         );
     }
@@ -48,11 +48,14 @@ const mapDispatchToProps = (dispatch) => {
             type: "SET_FORMULA"
             , formula: obj
         }),
-        toggleStat: (stat) => dispatch({type: "TOGGLE_EDITSTAT", 
-        editstat : stat}),
-        saveEdit: (obj, idx) => dispatch({type: "SET_UPDATE", 
-        dataBaru: obj, idx:idx})
-
+        toggleStat: (stat) => dispatch({
+            type: "TOGGLE_EDITSTAT",
+            editstat: stat
+        }),
+        saveEdit: (obj, idx) => dispatch({
+            type: "SET_UPDATE",
+            dataBaru: obj, idx: idx
+        })
     }
 }
 export default connect(mapStateToProps, mapDispatchToProps)(Form);

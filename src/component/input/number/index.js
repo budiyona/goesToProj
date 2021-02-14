@@ -9,28 +9,12 @@ class Text extends Component {
          }
     }
     render() { 
-        console.log("props",this.props);
-        console.log(this.state);
         return ( 
-            <input 
-                type="number" 
-                
-                name=""
-            />
+            <div className="mb-3">
+                <label className="form-label">{this.props.children}</label>
+                <input type="number" className="form-control"/>
+            </div>
          );
     }
 }
-const mapStateToProps = (state) => {
-    return {
-        nama: state.nama
-    }
-}
-const mapDispatchToProps = (dispatch) => {
-    return {
-        setNama: () => dispatch({type: ActionType.SET_NAMA_ACTION
-        ,nama: this.state.namainput
-        }),
-        
-    }
-}
-export default connect(mapStateToProps, mapDispatchToProps)(Text);
+export default Text;

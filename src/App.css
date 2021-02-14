@@ -1,5 +1,34 @@
-.margin-button-home{
+.margin-home{
   margin: 10px;
 }
-
+.container-home {
+  display: flex;
+  flex-direction: row;
+}
+.fixed-login-home {
+  width: 270px;
+  height: 300px;
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: 20px;
+  margin-top: 20px;
+  margin-bottom: auto;
+}
+.center-margin{
+  margin: auto;
+}
+.fixed-landing-app{
+  width: 300px;
+}
+.white-center{
+  background-color: #F8F9FA;
+  text-align: center;
+}
+.Form {
+  display: flex;
+  flex-direction: column;
+}
+a{
+  color: black;
+}
 

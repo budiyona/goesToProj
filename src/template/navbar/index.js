@@ -9,46 +9,26 @@ class Nav extends Component {
 
     render() {
         return (
-            <nav className="navbar navbar-light bg-light">
+            <nav className="navbar navbar-light bg-light atas">
                 <div className="container-fluid">
                     <a className="navbar-brand">FormulaX</a>
-                    <Link to="/home">
-                        <div className="nav-link active" >Beranda</div>
+                    <Link className="nav-link" to="/home">
+                        Beranda
                     </Link>
-                    <Link to="/formula">
-                        <div className="nav-link disabled" >Formula</div>
+                    <Link className="nav-link" to="/formula">
+                        Formula
                     </Link>
-                     <Link to="./kimia">
-                        <div className="menu" >Zat Kimia</div>
+                     <Link className="nav-link" to="./kimia">
+                        Zat Kimia
                     </Link>
-                     <Link to="/laporan">
-                        <div className="menu" >Laporan</div>
+                     <Link className="nav-link" to="/laporan">
+                        Laporan
                     </Link>
-                     <Link to="/info">
-                        <div className="menu" >Info</div>
+                     <Link className="nav-link" to="/info">
+                        Info
                     </Link>
                 </div>
             </nav>
-            // <nav className="navbar navbar-light">
-            //     <div class="container-fluid">
-            //         <Link to="/home">
-            //             <div className="menu" ><font color="white">Beranda</font></div>
-            //         </Link>
-            //         <Link to="/formula">
-            //             <div className="menu" >Formula</div>
-            //         </Link>
-            //         <Link to="./kimia">
-            //             <div className="menu" >Zat Kimia</div>
-            //         </Link>
-            //         <Link to="/laporan">
-            //             <div className="menu" >Laporan</div>
-            //         </Link>
-            //         <Link to="/info">
-            //             <div className="menu" >Info</div>
-            //         </Link>
-            //     </div>
-            // </nav>
-
         );
     }
 }

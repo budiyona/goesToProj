@@ -11,9 +11,11 @@ function App() {
   return (
     <Provider store={store}>
       <Router>
+      <div class="container-fluid">
         <Nav></Nav>
         <Body></Body>
         <Footer></Footer>
+      </div>
       </Router>
     </Provider>
   );

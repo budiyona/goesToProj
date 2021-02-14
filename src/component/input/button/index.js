@@ -8,12 +8,11 @@ class Button extends Component {
     render() { 
         
         return ( 
-            <input 
-            type="button" 
-            className="button" 
-            value=""
-            onClick=""
-            />
+            <button 
+            type="submit" 
+            className="btn btn-primary">
+                {this.props.children}
+            </button>
          );
     }
 }

@@ -7,7 +7,7 @@ class Footer extends Component {
     }
     render() {
         return (
-            <div className="card-footer text-muted">
+            <div className="card-footer fixed-bottom white-center">
                 Uian FE Budiyono
             </div>
         );
