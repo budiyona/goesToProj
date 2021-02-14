@@ -14,7 +14,7 @@ class Date extends Component {
                 </label>
                 <input
                     type="date"
-                    className="input-date"
+                    className="form-label"
                     placeholder={this.props.placeholder}
                 />
             </div>

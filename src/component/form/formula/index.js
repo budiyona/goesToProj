@@ -15,21 +15,18 @@ class FormFormula extends Component {
             <Option>{el}</Option>
         )
         return (
-            <div className="Form">
-                <div className="card-body">
+            <div className="form-formula">
                     <Text>Nama</Text>
                     <Date>tanggal</Date>
                     <TextArea>Hasil</TextArea>
-                    <Button>Tambah</Button>
-                </div>
-                <div className="card-body">
                     <div className="mb-3">
                         <Label>Zat Kimia</Label>
-                        <select multiple class="form-control" id="exampleFormControlSelect2">
+                        <select class="form-control" id="exampleFormControlSelect2">
                             {pilihan}
                         </select>
                     </div>
-                    <table class="table table-striped">
+                    <Button>Tambah</Button>
+                    <table className="table">
                         <thead>
                             <tr>
                                 <th scope="col">#</th>
@@ -75,7 +72,6 @@ class FormFormula extends Component {
                             </tr>
                         </tbody>
                     </table>
-                </div>
             </div>
         );
     }

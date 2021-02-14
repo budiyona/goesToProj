@@ -8,7 +8,7 @@ class Login extends Component {
     }
     render() {
         return (
-            <div className="login">
+            <div className="login center ver-center">
                 <Text>Username</Text>
                 <Password>Password</Password>
                 <Button>Login</Button>

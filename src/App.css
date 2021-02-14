@@ -7,7 +7,7 @@
 .navbar {
   display: flex;
   flex-direction: column;
-  height: 15%;
+  height: 10%;
   box-sizing: border-box;
   background-color: antiquewhite;
 }
@@ -30,16 +30,19 @@
   color: black;
 }
 .container {
-  height: 75%;
+  height: 85%;
   background-color: #F8F9FA;
   box-sizing: border-box;
   padding: 10px;
 }
 .footer {
-  height: 10%;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(77, 77, 77);
+  color: white;
   text-align: center;
-  display: flex;
-  background-color: gray;
 }
 .container-home {
   display: flex;
@@ -60,8 +63,7 @@
   border-radius: 8px;
   box-sizing: border-box;
   width: 20%;
-  margin-right: auto;
-  margin-left: auto;
+  height: 50%;
 }
 .form-label {
   margin-bottom: 3px;
@@ -74,4 +76,21 @@
   box-sizing: border-box;
   width: 100%;
   border: 1px solid #c4c4c4;
+}
+table, tr, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align: center;
+  padding: 2px 16px;
+}
+
+tr:hover {background-color: #a09c9c;}
+
+.form-formula {
+  width: 20%;
+  margin: 0% 2%;
+}
+.table-formula {
+  width: 70%;
+  margin: 0% 2%;
 }

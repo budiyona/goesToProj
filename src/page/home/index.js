@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Login } from "../../component/form";
+import { Login } from "../../component";
 
 class Home extends Component {
     constructor(props) {
