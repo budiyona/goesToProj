@@ -10,7 +10,7 @@ class TextArea extends Component {
             <div className="input-grup">
                 <label className="form-label">{this.props.children}</label>
                 <textarea
-                    className="form-label"
+                    className="input"
                     name="efek"
                 />
             </div>

@@ -10,7 +10,9 @@ class Text extends Component {
     render() {
         return (
             <div className="input-grup">
-                <label className="form-label">{this.props.children}</label>
+                <label 
+                name={this.props.name}
+                className="form-label">{this.props.children}</label>
                 <input type="text" className="input" />
             </div>
         );

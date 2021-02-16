@@ -10,11 +10,11 @@ class Date extends Component {
         return (
             <div className="input-grup">
                 <label
-                    className="label">{this.props.children}
+                    className="form-label">{this.props.children}
                 </label>
                 <input
                     type="date"
-                    className="form-label"
+                    className="input"
                     placeholder={this.props.placeholder}
                 />
             </div>

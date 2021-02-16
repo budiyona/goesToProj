@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Button, Text, TextArea, Date, Option } from "../../input";
-import Label from "../../label";
 
 class FormFormula extends Component {
     constructor(props) {
@@ -19,9 +18,9 @@ class FormFormula extends Component {
                     <Text>Nama</Text>
                     <Date>tanggal</Date>
                     <TextArea>Hasil</TextArea>
-                    <div className="mb-3">
-                        <Label>Zat Kimia</Label>
-                        <select class="form-control" id="exampleFormControlSelect2">
+                    <div className="input-grup">
+                        <label className="form-label ">Zat Kimia</label>
+                        <select class="input">
                             {pilihan}
                         </select>
                     </div>

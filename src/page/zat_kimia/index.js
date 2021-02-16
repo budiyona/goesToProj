@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { FormKimia } from '../../component/form';
+import { TKimia } from '../../component/table';
 class ZakKimia extends Component {
     constructor(props) {
         super(props);
@@ -6,8 +8,11 @@ class ZakKimia extends Component {
     }
     render() { 
         return ( 
-            <> ini halaman zatkimia
-            </>
+            <div className="container-home">
+            <FormKimia></FormKimia>
+            <TKimia></TKimia>
+
+           </div>
          );
     }
 }

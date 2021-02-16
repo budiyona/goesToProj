@@ -12,7 +12,7 @@ class Text extends Component {
         return ( 
             <div className="mb-3">
                 <label className="form-label">{this.props.children}</label>
-                <input type="number" className="form-control"/>
+                <input type="number" className="input"/>
             </div>
          );
     }

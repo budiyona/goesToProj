@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Route, Switch } from 'react-router-dom';
-import { Formula, Home, Info, Laporan,ZakKimia } from "../../page";
+import { Formula, Home, Info, Jenis, Laporan,ZakKimia } from "../../page";
 
 class Body extends Component {
     constructor(props) {
@@ -22,6 +22,9 @@ class Body extends Component {
                     </Route>
                     <Route path="/laporan">
                         <Laporan></Laporan>
+                    </Route>
+                    <Route path="/jenis">
+                        <Jenis></Jenis>
                     </Route>
                     <Route path="/info">
                         <Info></Info>

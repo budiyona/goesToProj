@@ -20,8 +20,11 @@ class Nav extends Component {
                     <Link className="nav-link" to="/formula">
                         Formula
                     </Link>
-                    <Link className="nav-link" to="./kimia">
+                    <Link className="nav-link" to="/kimia">
                         Zat Kimia
+                    </Link>
+                    <Link className="nav-link" to="/jenis">
+                        Jenis Kimia
                     </Link>
                     <Link className="nav-link" to="/laporan">
                         Laporan

@@ -10,7 +10,9 @@ class Button extends Component {
         return ( 
             <button 
             type="submit" 
-            className={this.props.className}>
+            className={this.props.className}
+            onClick={this.props.onClick}
+            >
                 {this.props.children}
             </button>
          );
